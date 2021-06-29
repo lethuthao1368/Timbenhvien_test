@@ -1,54 +1,42 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-st.title("Demo in Class")
+# from gsheetsdb import connect
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
+st.title("demo TÌM BỆNH VIỆN")
+st.image('Picture\TIM BENH VIEN.png',width = 600)
+#     # Đọc data từ sheet dùng gsheetsdb
+# conn = connect()
+# def run_query(query):
+#     rows = conn.execute(query, headers=1)
+#     return rows
+# sheet_url = st.secrets["public_gsheets_url"]
+# rows = run_query(f'SELECT * FROM "{sheet_url}"')
+# #Đọc data từ dạng query sang dạng pandas
+# df = pd.DataFrame(rows.fetchall())
+# st.write(pd.DataFrame(df.values, columns = ['STT', 'Điền', 'KẾT QUẢ', 2,6,7,8,9,0,1]))
+## Các lựa chọn
+# st.sidebar.markdown("## Nhập thông tin")
+# options1 = st.sidebar.multiselect('Bạn muốn tìm bệnh viện theo tiêu chí nào?',
+# ["Khám sức khỏe thông thường", "Khám sức khỏe cho người nước ngoài", "Khám sức khỏe lái xe"])
+# df1 = 'Vui lòng chọn tiêu chí'
+# if options1 == ["Khám sức khỏe thông thường"]:
+#     df1 = df[df['KSKTT'] == 'x']
+# elif options1 == ["Khám sức khỏe cho người nước ngoài"]:
+#     df1 = df[df['KSKCYTNN'] == 'x']
+# elif options1 == ["Khám sức khỏe lái xe"]:
+#     df1 = df[df['KSKLX'] == 'x']
+# st.write(df1)
 
-# input
-st.markdown('## Input')
-is_learner = st.checkbox('Learner')
-default_value_goes_here = 'Hello World'
-user_input = st.text_input("Input a text", default_value_goes_here)
-
-# output 
-st.markdown('## Output')
-st.write(user_input)
-if is_learner:
-    st.write('Hello Learner')
-
-if st.checkbox('Show dataframe'):
-    chart_data = pd.DataFrame(
-       np.random.randn(20, 3),
-       columns=['a', 'b', 'c'])
-    chart_data
-"""
-# My first app
-Here's our first attempt at using data to create a table:
-"""
-
-df = pd.DataFrame({
-  'first column': [1, 2, 3, 4],
-  'second column': [10, 20, 30, 40]
-})
-df
-
-left_column, right_column = st.beta_columns(2)
-pressed = left_column.button('Press me?')
-if pressed:
-    right_column.write("Woohoo!")
-
-expander = st.beta_expander("FAQ")
-expander.write("Here you could put in some really, really long explanations...")
-
-start_color, end_color = st.select_slider('Select a range of color wavelength',
-options=['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'], value=('red', 'indigo'))
-st.write('You selected wavelengths between', start_color, 'and', end_color)
-
-with st.form("my_form"):
-    st.write("Inside the form")
-    slider_val = st.slider("Form slider",0,1000,(100,200))
-    checkbox_val = st.checkbox("Form checkbox")
-# Every form must have a submit button.
-    submitted = st.form_submit_button("Submit")
-    if submitted:
-        st.write("slider", slider_val, "checkbox", checkbox_val)
-st.write("Outside the form")
+# Dùng gspread load danh sách bệnh viện + địa chỉ + các yếu tố đặc biệt
+scope = ['https://spreadsheets.google.com/feeds',
+         'https://www.googleapis.com/auth/drive']
+credentials = ServiceAccountCredentials.from_json_keyfile_name(
+    'timbenhvien-830ed70dcaeb.json', scope)
+gc = gspread.authorize(credentials)
+sh = gc.open_by_key('1ysTWh2T1rJXOuYWC7KB9g0cOgyLgFESnK0PbqPMNlsU')
+worksheet1 = sh.get_worksheet(0)
+df_1 = pd.DataFrame(worksheet1.get_all_records())
+st.write(df_1)
+# 
