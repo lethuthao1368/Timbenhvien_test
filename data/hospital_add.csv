@@ -1,0 +1,170 @@
+﻿tt,id_bv,name,type,address,district,ksk_thong_thuong,ksk_nuoc_ngoai,ksk_lai_xe,ghi_chu,lat,lon
+1,ĐK BVTP1,Bệnh viện Đa khoa Sài Gòn,BV TP,"125 Lê Lợi, Phường Bến Thành",1,x,x,,,10.7721095,106.6982784
+2,ĐK BVTP2,Bệnh viện Nguyễn Tri Phương,BV TP,"468 Nguyễn Trãi, Phường 8",5,x,x,x,,10.7557466,106.67003
+3,ĐK BVTP3,Bệnh viện An Bình,BV TP,"146 An Bình, Phường 7",5,x,,x,,10.75433,106.6715912
+4,ĐK BVTP4,Bệnh viện Điều dưỡng – Phục hồi chức năng – Điều trị bệnh nghề nghiệp,BV TP,"125/61 Âu Dương Lân, Phường 2",8,x,,,,10.7405538,106.6871743
+5,ĐK BVTP5,Bệnh viện Nhân Dân 115,BV TP,"527 Sư Vạn Hạnh, Phường 12",10,x,x,,,10.7744934,106.6665273
+6,ĐK BVTP6,Bệnh viện Trưng Vương,BV TP,"266 Lý Thường Kiệt, phường 14",10,x,x,x,,10.7694392,106.6585975
+7,ĐK BVTP7,Bệnh viện Nhi đồng 2,BV TP,"14 Lý Tự Trọng, Phường Bến Nghé",1,x,,,Chỉ khám cho trẻ em dưới 16 tuổi,10.7805737,106.702134
+8,ĐK BVTP8,Bệnh viện Nhi Đồng 1,BVTP,"341 Sư Vạn Hạnh, Phường 10",10,x,,,Chỉ khám cho trẻ em dưới 16 tuổi,10.7690556,106.6711495
+9,ĐK BVTP9,Bệnh viện Nhi Đồng Thành phố ,BV TP,"15 đường Cao tốc Thành phố Hồ Chí Minh - Trung Lương, ấp 1, xã Tân Kiên",Bình Chánh,x,,,Chỉ khám cho trẻ em dưới 16 tuổi,10.5969348,106.413069
+10,ĐK BVTP10,Bệnh viện Nhân dân Gia Định,BV TP,"1A Nơ Trang Long, Phường 7",Bình Thạnh,x,x,x,,10.8045236,106.6949173
+11,ĐK BVTP11,Bệnh viện đa khoa khu vực Củ Chi,BV TP,"đường Nguyễn Văn Hoài, Ấp Bàu Tre, Xã Tân An Hội",Củ Chi,x,,x,,10.9780416,106.478985
+12,ĐK BVTP12,Bệnh viện đa khoa khu vực Hóc Môn,BV TP,"65/2B đường Bà triệu, Thị trấn Hóc Môn",Hóc Môn,x,,x,,10.8870201,106.5944298
+13,ĐK BVTP13,Bệnh viện Đa khoa Khu vực Thủ Đức,BV TP,"64 Lê Văn Chí, Phường Linh Trung",Thủ Đức,x,,x,,10.861498,106.7804456
+14,ĐK BVQH1,Bệnh viện Quận Thủ Đức,BV QH,"29 Phú Châu, Phường Tam Phú",Thủ Đức,x,x,x,,10.8643834,106.7457306
+15,ĐK BVQH2,Bệnh viện Quận 1,BV QH,"388 Hai Bà Trưng, Phường Tân Định
+29A Cao Bá Nhạ, Phường Nguyễn Cư Trinh",1,x,,x,,10.7905691,106.6889146
+16,ĐK BVQH3,Bệnh viện Quận 2,BV QH,"130 Lê Văn Thịnh, phường Bình Trưng Tây",2,x,,x,,10.7827322,106.7691329
+17,ĐK BVQH4,Trung tâm Y tế Quận 3 - Cơ sở 1,BV QH,"09 Huỳnh Tịnh Của, Phường 8",3,x,,,,10.789652,106.686463
+18,ĐK BVQH5,Bệnh viện Quận 4,BV QH,"63-65 Bến Vân Đồn, Phường 12",4,x,,x,,10.7653075,106.7022376
+19,ĐK BVQH6,Bệnh viện Quận 5,BV QH,"642 A Nguyễn Trãi, Phường 11",5,x,,x,,10.7541193,106.6657992
+20,ĐK BVQH7,Bệnh viện Quận 6,BV QH,"02D Chợ Lớn, Phường 11",6,x,,x,,10.7452609,106.6299566
+21,ĐK BVQH8,Bệnh viện Quận 7 ,BV QH,"101 Nguyễn Thị Thập, phường Tân Phú",7,x,,x,,10.7381223,106.7242701
+22,ĐK BVQH9,Bệnh viện Quận 8,BV QH,"82 Cao Lỗ, Phường 4 ",8,x,,x,,10.7416193,106.6764763
+23,ĐK BVQH10,Bệnh viện Quận 9,BV QH,"387 đường Lê Văn Việt, KP2. Phường Tăng Nhơn Phú A",9,x,,x,,10.8449288,106.7900007
+24,ĐK BVQH11,Bệnh viện Quận 10,BV QH,"571 đường Sư Vạn Hạnh, Phường 13",10,x,,x,,10.7761326,106.6666144
+25,ĐK BVQH12,Bệnh viện Quận 11,BV QH,"72 đường số 5, Cư xá Bình Thới, phường 8",11,x,,x,,10.7607335,106.647917
+26,ĐK BVQH13,Bệnh viện Quận 12,BV QH,"111 đường TCH 21, phường Tân Chánh Hiệp",12,x,,x,,10.8632491,106.6394542
+27,ĐK BVQH14,Bệnh viện huyện Bình Chánh,BV QH,"số 1 đường số 1 khu Trung tâm Hành chính, Thị Trấn Tân Túc",Bình Chánh,x,,x,,10.6900914,106.5846036
+28,ĐK BVQH15,Bệnh viện quận Bình Tân,BV QH,"809 Hương Lộ 2, phường Bình Trị Đông A",Bình Tân,x,,,,10.7644109,106.6034208
+29,ĐK BVQH16,Bệnh viện quận Bình Thạnh,BV QH,"112 A-B Đinh Tiên Hoàng, Phường 1",Bình Thạnh,x,x,x,Thực hiện đối với người có khả năng nói và hiểu được tiếng Anh ,10.7980298,106.6966605
+30,ĐK BVQH17,Trung tâm Y tế Huyện Cần Giờ,BV QH,"Khu phố Miễu Ba, Thị trấn Cần Thạnh",Cần Giờ,x,,x,,10.4083962,106.9551712
+31,ĐK BVQH18,Bệnh viện quận Gò Vấp,BV QH,"212 Lê Đức Thọ, Phường 15",Gò Vấp,x,,x,,10.846207,106.671824
+32,ĐK BVQH19,Bệnh viện huyện Nhà Bè,BV QH,"281A Lê Văn Lương. Ấp 3, Xã Phước Kiểng",Nhà Bè,x,,x,,10.7136259,106.7010584
+33,ĐK BVQH20,Bệnh viện quận Phú Nhuận,BV QH,"274 đường Nguyễn Trọng Tuyển, Phường 8",Phú Nhuận,x,,x,,10.7981603,106.6719038
+34,ĐK BVQH21,Bệnh viện quận Tân Bình,BV QH,"605 Hoàng Văn Thụ, Phường 4",Tân Bình,x,,x,,10.7946748,106.6556691
+35,ĐK BVQH22,Bệnh viện quận Tân Phú,BV QH,"số 609-611 đường Âu Cơ, phường Phú Trung",Tân Phú,x,,x,,10.7836013,106.6417917
+36,ĐK BVQH23,Bệnh viện huyện Củ Chi,BV QH,"1307 Tỉnh lộ 7, ấp Chợ Cũ 2, xã An Nhơn Tây",Củ Chi,x,,x,,11.0854068,106.5092845
+37,ĐK BVTN1,Bệnh viện Quốc tế Mỹ,BV TN,"Số 6 đường Bắc Nam 3, phường An Phú",2,x,,,,10.7958647,106.7652454
+38,ĐK BVTN2,Bệnh viện FV,BV TN,"06 đường Nguyễn Lương Bằng, phường Tân Phú",7,x,x,,,10.7324535,106.7183103
+39,ĐK BVTN3,Bệnh viện đa khoa Tân Hưng,BV TN,"871 Trần Xuân Soạn, phường Tân Hưng",7,x,x,,Thực hiện đối với người có khả năng nói và hiểu được tiếng Anh và tiếng Pháp,10.750769,106.701648
+40,ĐK BVTN4,Bệnh viện đa khoa Vạn Hạnh,BV TN,"781/B1-B3-B5 Lê Hồng Phong, Phường 12",10,x,x,x,,21.0743131,106.5024344
+41,ĐK BVTN5,Bệnh viện Đa khoa Tâm Trí Sài Gòn,BV TN,"171/3 Trường Chinh, P. Tân Thới Nhất",12,x,,,,10.8317732,106.6218259
+42,ĐK BVTN6,Bệnh viện Quốc tế CITY ,BV TN,"532A Kinh Dương Vương, Phường Bình Trị Đông",Bình Tân,x,x,,,10.7496758,106.628863
+43,ĐK BVTN7,Bệnh viện đa khoa Triều An,BV TN,"425 Kinh Dương Vương, Phường An Lạc",Bình Tân,x,,,,10.7391581,106.6171882
+44,ĐK BVTN8,Bệnh viện Minh Anh,BV TN,"36 đường số 1B, Phường Bình Trị Đông",Bình Tân,x,,,,10.7476736,106.6144635
+45,ĐK BVTN9,Bệnh viện đa khoa Quốc Ánh,BV TN,"104-110 đường 54, KDC Tân Tạo",Bình Tân,x,,x,,10.7535828,106.5932551
+46,ĐK BVTN10,Bệnh viện Đa khoa quốc tế Vinmec Central Park,BV TN,"720A Điện Biên Phủ, P. 22 ",Bình Thạnh,x,x,,,10.799132,106.719666
+47,ĐK BVTN11,Bệnh viện đa khoa Xuyên Á,BV TN,"Số 42, quốc lộ 22, Ấp chợ, Xã Tân Phú Trung",Củ Chi,x,x,x,,10.9287837,106.5579552
+48,ĐK BVTN12,Bệnh viện đa khoa Quốc tế Vũ Anh,BV TN,"15-16 Phan Văn Trị, Phường 7",Gò Vấp,x,,,,10.8286794,106.6857569
+49,ĐK BVTN13,Bệnh viện Hồng Đức III ,BV TN,"32/2 Thống Nhất, phường 10, quận Gò Vấp",Gò Vấp,x,x,,,10.8342438,106.6642174
+50,ĐK BVTN14,Bệnh viện Đa khoa An Sinh,BV TN,"10 Trần Huy Liệu, Phường 12",Phú Nhuận,x,x,x,,10.7910586,106.6786412
+51,ĐK BVTN15,Bệnh viện Hoàn Mỹ Sài Gòn,BV TN,"số 60-60A, Phan Xích Long, Phường 1",Phú Nhuận,x,x,x,,10.8001442,106.6842534
+52,ĐK BVTN16,Bệnh viện Gia An 115,BVTN,"Số 5 đường số 17A, Phường Bình Trị Đông B",Bình Tân,x,x,x,Thực hiện đối với người có khả năng nói và hiểu được tiếng Anh ,10.7403886,106.6077995
+53,ĐK BVTN17,Bệnh viện đa khoa Quốc tế Nam Sài Gòn,BV TN,"Số 88 đường số 8 KDC Trung Sơn,  xã Bình Hưng, huyện Bình Chánh",Bình Chánh,x,,,,10.736113,106.6908018
+54,ĐK BVTN18,Bệnh viện Đa khoa Quốc tế Hoàn Mỹ Thủ Đức,BV TN,"241 Quốc lộ 1 K, Phường Linh Xuân",Thủ Đức,x,,x,,10.8866163,106.7735346
+55,ĐK BVTN19,Bệnh viện Đa khoa Tâm Anh,BVTN,"2 B Phổ Quang, Phường 2",Quận Tân Bình,x,,,,10.803155,106.666289
+56,ĐK BVQP1,Bệnh viện Quân Dân Miền Đông,BVQP,Phường Hiệp Phú,9,x,,x, Theo Quyết định 2251/QĐ-QY ngày 19/12/2013 và Quyết định 1001/QĐ-QY ngày 11/05/2017 của Bộ Quốc phòng Cục Quân Y,10.8486667,106.7809682
+57,ĐK PKĐK1,Phòng khám đa khoa thuộc Trung tâm Y tế quận 1,PKĐK,"số 01-02 đặng Tất, phường Tân Định",1,x,,,,10.7931741,106.6894371
+58,ĐK PKĐK2,Phòng khám đa khoa thuộc Trung tâm Y tế Quận 6,PKĐK,"A14/1 Bà Hom, Phường 13",6,x,,,,10.754248,106.629604
+59,ĐK PKĐK3,Phòng khám đa khoa thuộc Trung tâm y tế quận 7,PKĐK,"101 Nguyễn Thị Thập, phường Tân Phú",7,x,,,,10.7381223,106.7242701
+60,ĐK PKĐK4,Phòng khám đa khoa thuộc Trung tâm Y tế quận Tân Phú,PKĐK,"83/1 đường Vườn Lài, phường Phú Thọ Hoà quận Tân Phú và 265 Tân Quy, phường Tân Quý",Tân Phú,x,,x,,10.7871418,106.633405
+61,ĐK PKĐK5,Phòng khám đa khoa thuộc Trung tâm y tế quận 9,PKĐK,"48 A Tăng Nhơn Phú, phường Tăng Nhơn Phú B",9,x,,,,10.8321244,106.7780643
+62,ĐK PKĐK6,Phòng khám đa khoa ĐTH thuộc Chi nhánh Công ty Cổ phần phát triển Y tế Victoria Healthcare – Phòng khám đa khoa ĐTH,PKĐK,"20-20 Bis-22 Đinh Tiên Hoàng, phường Đa Kao",1,x,,,,10.7890226,106.6992263
+63,ĐK PKĐK7,Phòng khám đa khoa quốc tế Columbia Asia-Sài Gòn thuộc Công ty TNHH Columbia Asia,PKĐK,"08 Alexandre de Rhodes, phường Bến Nghé",1,x,x,,,10.7794604,106.6967232
+64,ĐK PKĐK8,Phòng khám đa khoa thuộc Chi nhánh Công ty cổ phần Chăm sóc sức khỏe Việt Gia,PKĐK,"166 Nguyễn Văn Thủ, phường Đakao",1,x,x,,,10.7876866,106.6967788
+65,ĐK PKĐK9,Phòng khám đa khoa thuộc Công ty Cổ phần Vigor Anbis Japan,PKĐK,"Lầu 2, Tòa nhà Miss Áo dài, số 21 Nguyễn Trung Ngạn, Phường Bến Nghé",1,x,x,x,,10.7829017,106.7048546
+66,ĐK PKĐK10,Phòng khám đa khoa thuộc Công ty TNHH Lab Group International Việt Nam,PKĐK,"75 Phạm Viết Chánh, phường Nguyễn Cư Trinh",1,x,,x,,10.7656519,106.6822571
+67,ĐK PKĐK11,Phòng khám đa khoa Thuộc Công ty TNHH PKĐK Quốc tế An Phú,PKĐK,"251A Lương Định Của, phường An Phú",2,x,,,,10.7906018,106.7480688
+68,ĐK PKĐK12,Phòng khám đa khoa thuộc Chi nhánh 3 Công ty TNHH Chất lượng cuộc sống Kim Cương- Trung tâm đa khoa Diamond,PKĐK,181 Võ Thị Sáu. Phường 07,3,x,,,Không khám cho trẻ em dưới 16 tuổi,10.7817656,106.686431
+69,ĐK PKĐK13,Phòng khám đa khoa Raffles Medical thuộc Chi nhánh Công ty TNHH Sức khỏe trọn đời tại TP. Hồ Chí Minh,PKĐK,"167A Nam Kỳ Khởi Nghĩa, phường 7",3,x,x,,,10.7838167,106.6899957
+70,ĐK PKĐK14,Phòng khám đa khoa thuộc Chi nhánh Công ty Cổ phần Đầu tư 3H - Phòng khám đa khoa Quốc tế Yersin,PKĐK,"10 Trương Định, Phường 6",3,x,,,,10.7765532,106.6913316
+71,ĐK PKĐK15,Phòng khám đa khoa thuộc Chi nhánh Công ty cổ phần sữa Việt Nam - Phòng khám đa khoa An Khang,PKĐK,"184-186-188 Nguyễn Đình Chiểu, Phường 6",3,x,,,,10.7791828,106.6903157
+72,ĐK PKĐK16,Phòng khám đa khoa thuộc chi nhánh công ty cổ phần y tế Việt Anh,PKĐK,"398B Cách Mạng Tháng Tám, phường 11",3,x,,,khám sức khỏe định kỳ ,10.783404,106.671687
+73,ĐK PKĐK17,Phòng khám đa khoa thuộc chi nhánh Công ty TNHH phòng khám đa khoa Sài Gòn - Trung tâm khám bệnh số 2,PKĐK,"132 Lý Thái Tổ, Phường 2",3,x,,x,,10.7664073,106.6792921
+74,ĐK PKĐK18,Phòng khám đa khoa thuộc Công ty Cổ phần bệnh viện PACIFIC,PKĐK,"4-4B Lê Quý Đôn, phường 6",3,x,,,,10.7796857,106.6927331
+75,ĐK PKĐK19,Phòng khám đa khoa thuộc Cty TNHH Monaco Healthcare,PKĐK,"493 Điện Biên Phủ, Phường 3",3,x,,,,10.7714653,106.677846
+76,ĐK PKĐK20,Phòng khám đa khoa DHA Healthcare thuộc Công ty Cổ phần Y tế DHA,PKĐK,"201 A Nam Kỳ Khởi Nghĩa, Phường 7",3,x,,,,10.787392,106.686246
+77,ĐK PKĐK21,Phòng khám đa khoa Thiên Phước thuộc Công ty TNHH Phòng khám đa khoa Thiên Phước,PKĐK,"269 đường Điện Biên Phủ, phường 7",3,x,,,,10.7804422,106.6879228
+78,ĐK PKĐK22,Phòng khám đa khoa đại học Nguyễn Tất Thành thuộc Công ty cổ phần Dệt may Sài Gòn,PKĐK,"298A Nguyễn Tất Thành, phường 13",4,x,,,,10.761195,106.7095444
+79,ĐK PKĐK23,Phòng khám đa khoa thuộc Trường đại học Y khoa Phạm Ngọc Thạch,PKĐK,"461 Sư Vạn Hạnh, phường 12",10,x,,,,10.7733261,106.6685991
+80,ĐK PKĐK24,Phòng khám đa khoa thuộc Chi nhánh Công ty TNHH  Thương Mại Dịch vụ Y khoa Eurovie- Phòng khám đa khoa Eurovie,PKĐK,"210 Trần Bình Trọng, Phường 4",5,x,,,,10.7607517,106.6798964
+81,ĐK PKĐK25,Phòng khám đa khoa thuộc Công ty Cổ phần Y tế Y Việt,PKĐK,"107C Ngô Quyền, phường 11",5,x,,,,10.7551189,106.6663569
+82,ĐK PKĐK26,Phòng khám đa khoa thuộc Doanh nghiệp tư nhân Phòng khám đa khoa Hồng Lạc,PKĐK,"699 Trần Hưng Đạo, Phường 1",5,x,,,,10.7557353,106.6835238
+83,ĐK PKĐK27,Phòng khám đa khoa thuộc Công ty TNHH Trung tâm Y khoa Hoàng Khang,PKĐK,"285 Bà Hom, Phường 13",6,x,x,x,,10.75579,106.6247379
+84,ĐK PKĐK28,Phòng khám đa khoa Phúc Đức thuộc Công ty cổ phần Bệnh viện Tim Tâm Đức,PKĐK,"04 đường Nguyễn Lương Bằng, phường Tân Phú",7,x,,,,10.7339387,106.7185087
+85,ĐK PKĐK29,Phòng khám đa khoa Tân Thuận thuộc Công ty TNHH Dịch vụ Y tế Tân Thuận,PKĐK,"lô HC2 khu trung tâm điều hành dịch vụ, khu chế xuất Tân Thuận",7,x,,,,10.7523876,106.7299356
+86,ĐK PKĐK30,Phòng khám đa khoa thuộc Chi nhánh 1 - Công ty TNHH Trung tâm Y khoa Phước An,PKĐK,"274 Huỳnh Tấn Phát, P. Tân Thuận Tây",7,x,,,,10.7534481,106.7282734
+87,ĐK PKĐK31,Phòng khám đa khoa thuộc Công ty Cổ phần đầu tư và Phát triển Y tế Saint Luke ,PKĐK,"Tầng 02 Tòa nhà , số 105 Đường Tôn Dật Tiên, Phường Tân Phú",7,x,,,,10.7238528,106.7162615
+88,ĐK PKĐK32,Phòng khám đa khoa thuộc Công ty TNHH Phòng khám đa khoa Sky,PKĐK,"156-158 Lâm Văn Bền, P. Tân Quy, Quận 7, TP.HCM.",7,x,,x,,10.7427547,106.7158002
+89,ĐK PKĐK33,Phòng khám đa khoa thuộc Công ty TNHH Phòng khám Đa khoa Tâm Trí Sài Gòn,PKĐK,"số 163-165 đường Trần Trọng Cung, phường Tân Thuận Đông, Q.7, TP.HCM.",7,x,,,,10.7433519,106.7355921
+90,ĐK PKĐK34,Phòng khám đa khoa thuộc công ty TNHH Phòng khám đa khoa Thái Hòa,PKĐK,"31 Nguyễn Thị Thập, phường Tân Phú",7,x,,,,10.7375129,106.7287832
+91,ĐK PKĐK35,Phòng khám đa khoa thuộc Phòng khám quốc tế Careplus - Chi nhánh Công ty TNHH CityClinic Việt Nam,PKĐK,"Lầu2, tòa nhà , 105 Tôn Dật Tiên, phường Tân Phú",7,x,x,,,10.7271995,106.7204554
+92,ĐK PKĐK36,Phòng khám đa khoa thuộc Chi nhánh Công ty TNHH phòng khám đa khoa Quốc Tế Sài Gòn,PKĐK,"6-8 Trịnh Văn Cấn, Phường Cầu Ông Lãnh",1,x,,,,10.7677123,106.6968018
+93,ĐK PKĐK37,Phòng khám đa khoa thuộc công ty TNHH phòng khám đa khoa Liên Tâm,PKĐK,"67 Liên tỉnh 5, Phường 5",8,x,,,,10.739449,106.656496
+94,ĐK PKĐK38,Phòng khám đa khoa thuộc Công ty Cổ phần Bệnh viện Y Dược sài Gòn,PKĐK,"407 Đỗ Xuân Hợp, phường Phước Long B",9,x,,x,,10.8194276,106.7730331
+95,ĐK PKĐK39,Phòng khám đa khoa thuộc Công ty TNHH Y tế Hòa Hảo,PKĐK,"1B Hoàng Hữu Nam, KP Mỹ Thành, Phường Long Thạnh Mỹ",9,x,,,,10.8510496,106.8134832
+96,ĐK PKĐK40,Phòng khám đa khoa thuộc Công ty TNHH phòng khám đa khoa Quốc Tế Nhân Hậu,PKĐK,"522-524 Nguyễn Chí Thanh, phường 7",10,x,x,x,Không khám cho trẻ em dưới 16 tuổi,10.7586742,106.6617521
+97,ĐK PKĐK41,Phòng khám đa khoa - Trung tâm xét nghiệm và chẩn đoán y khoa- Medical Diag Center,PKĐK,"414-416-418-420 Cao Thắng, phường 12",10,x,x,x,Thực hiện đối với người có khả năng nói và hiểu được tiếng Anh ,10.7751556,106.6725691
+98,ĐK PKĐK42,Phòng khám đa khoa thuộc Công ty TNHH Phòng khám đa khoa Pháp Anh,PKĐK,"222-224-226 Nguyễn Duy Dương, P.4",10,x,,,,10.7628001,106.6706212
+99,ĐK PKĐK43,Phòng khám đa khoa thuộc Chi nhánh 2 đường Ba Tháng Hai - Công ty TNHH Trung tâm Y khoa Phước An ,PKĐK,"686 đường 3/2, phường 14",10,x,x,,Thực hiện đối với người có khả năng nói và hiểu được tiếng Anh ,10.7642449,106.6604096
+100,ĐK PKĐK44,Phòng khám đa khoa thuộc Công ty Cổ phần Dịch vụ Đầu tu Saigon Healthcare,PKĐK,"45 Thành Thái, Phường 14",10,x,,x,,10.7719065,106.6652146
+101,ĐK PKĐK45,Phòng khám đa khoa thuộc Chi nhánh Công ty Cổ phần Đầu tư Khang Minh - Trung tâm Y khoa Kỳ Hòa,PKĐK,"266A – 268 Đường 3 tháng 2, phường 12",10,x,,,,10.7700289,106.6604749
+102,ĐK PKĐK46,Phòng khám đa khoa thuộc Công ty Cổ phần Thương mại và đầu tư Y tế Y Việt - Phòng khám bệnh viện Đại học Y Dược 1,PKĐK,"525/7 -525/9 Sư Vạn Hạnh, phường 12",10,x,,,,10.7701512,106.6703276
+103,ĐK PKĐK47,Phòng khám đa khoa thuộc Công ty TNHH Một thành viên Phòng khám đa khoa An Phúc,PKĐK,"502-504 Nguyễn Chí Thanh, phường 7",10,x,,,,10.7587377,106.662083
+104,ĐK PKĐK48,Phòng khám đa khoa thuộc Công ty TNHH Phòng khám Đa khoa Ngọc Minh,PKĐK,"20-22 Lãnh Binh Thăng, Phường 13",10,x,,,,10.7624098,106.6560951
+105,ĐK PKĐK49,Phòng khám đa khoa thuộc Công ty TNHH Y khoa Ngọc Tâm,PKĐK,"320 Điện Biện Phủ, Phường 11",10,x,,x,,10.7756982,106.6824211
+106,ĐK PKĐK50,Phòng khám đa khoa thuộc Công ty TNHH Y - Dược Thái Anh,PKĐK,"134 Tân Hoà Đông, Phường 14",6,x,,,,10.7598104,106.6292109
+107,ĐK PKĐK51,Phòng khám đa khoa thuộc Công ty TNHH y tế Hoà Hảo,PKĐK,"254 Hoà Hảo, phường 4",10,x,,,,10.7625042,106.6702581
+108,ĐK PKĐK52,Phòng khám đa khoa thuộc Công ty Cổ phần Đầu tư Y Dược 99,PKĐK,"99-109 Thuận Kiều, Phường 4",11,x,,,,10.7584959,106.658372
+109,ĐK PKĐK53,Phòng khám đa khoa thuộc Chi nhánh Công ty TNHH Y Tế Thiên Ngọc,PKĐK,"1589 đường 3 tháng 2, phường 16",11,x,,,,10.7677297,106.6224737
+110,ĐK PKĐK54,Phòng khám đa khoa thuộc Công ty TNHH Phòng khám đa khoa Thuận Kiều,PKĐK,"630 Nguyễn Chí Thanh, phường 4",11,x,,,,10.7579118,106.6585073
+111,ĐK PKĐK55,Phòng khám đa khoa thuộc Công ty TNHH Y tế Đại Phước,PKĐK,"829 -829A Đường 3/2, Phường 7",11,x,x,x,,10.7634542,106.6598358
+112,ĐK PKĐK56,Phòng khám đa khoa thuộc Công ty TNHH Phòng khám đa khoa Sài Gòn,PKĐK,"3A35 Trần Văn Giàu, xã Phạm Văn Hai",Bình Chánh,x,,,,10.7852433,106.5250582
+113,ĐK PKĐK57,Phòng khám đa khoa thuộc Công ty TNHH Thương mại và Dịch vụ Phòng khám đa khoa Nam Sài Gòn,PKĐK,"D6/8 Quốc lộ 1 A, ấp 4, xã Bình Chánh",Bình Chánh,x,,,,10.788213,106.595819
+114,ĐK PKĐK58,Phòng khám đa khoa thuộc Công ty TNHH Phòng khám đa khoa Bác sĩ Gia đình Phú Đức,PKĐK,"838-840 Nguyễn Chí Thanh, Phường 04",11,x,,,,10.7570523,106.6533127
+115,ĐK PKĐK59,Phòng khám đa khoa Hưng Lộc thuộc Doanh nghiệp tư nhân Phòng khám đa khoa Hưng Lộc,PKĐK,"578 - 588 Hương Lộ 2, phường Bình Trị Đông",Bình Tân,x,,,,10.7696031,106.6128482
+116,ĐK PKĐK60,Phòng khám đa khoa thuộc Chi nhánh Công ty TNHH Phòng khám đa khoa Phú Lâm - trung tâm Y khoa Phú Lâm,PKĐK,"01-02-03 Đường 33A, Phường Bình Trị Đông B",Bình Tân,x,,x,,10.7540279,106.6089485
+117,ĐK PKĐK61,Phòng khám đa khoa thuộc Công ty Cổ phần Phòng khám Đa khoa Thành An,PKĐK,"1691 Tỉnh lộ 10, KP5, phường Tân Tạo",Bình Tân,x,,,,10.7590989,106.5769458
+118,ĐK PKĐK62,Phòng khám đa khoa thuộc Công ty TNHH Một thành viên Đầu tư và Dịch vụ Việt Phước,PKĐK,"772 Tân Kỳ Tân Quý, Phường Bình Hưng Hòa,",Bình Tân,x,,,,10.7899389,106.6027744
+119,ĐK PKĐK63,Phòng khám đa khoa thuộc Công ty TNHH Phòng khám Bảo An Khang,,"170-172 Đường số 19, Phường Bình Trị Đông B",Bình Tân,x,,,,10.7535039,106.6126791
+120,ĐK PKĐK64,Phòng khám đa khoa thuộc Công ty TNHH Phòng khám đa khoa Phước Linh,PKĐK,"210 Phan Đăng Giảng, phường Bình Hưng Hòa",Bình Tân,x,,,,10.8137643,106.6019072
+121,ĐK PKĐK65,Phòng khám đa khoa (Phòng khám số 2) thuộc Công ty TNHH Phòng khám Gia đình Thành phố Hồ Chí Minh ,PKĐK,"số 91 Nguyễn Hữu Cảnh, Phường 22",Bình Thạnh,x,x,,,10.7938527,106.7178457
+122,ĐK PKĐK66,Phòng khám đa khoa thuộc Chi nhánh Công ty TNHH Vì Dân,PKĐK,"69 Đinh Bộ Lĩnh, Phường 26",Bình Thạnh,x,,,,10.8072092,106.709294
+123,ĐK PKĐK67,Phòng khám đa khoa thuộc Công ty Cổ phần Phòng khám Olympus Gia Mỹ,PKĐK,"33 Nguyễn Huy Lượng, Phường 14",Bình Thạnh,x,,,,10.8055945,106.6963368
+124,ĐK PKĐK68,Phòng khám đa khoa thuộc Khoa khám bệnh Trung tâm Y tế Quận Bình Thạnh,PKĐK,"99/6 Nơ Trang Long, phường 11",Bình Thạnh,x,,,,10.8108725,106.6947158
+125,ĐK PKĐK69,Phòng khám đa khoa thuộc công ty TNHH Phòng khám đa khoa Jio Health,PKĐK,"30 Nguyễn Văn Lạc, phường 19",Bình Thạnh,x,,,,10.7943269,106.709538
+126,ĐK PKĐK70,Phòng khám đa khoa thuộc Công ty trách nhiệm hữu hạn Phòng khám Đa khoa Quốc tế Hàng Xanh,PKĐK,"395-397 - 399 Điện Biên Phủ, Phường 25",Bình Thạnh,x,,,,10.7985015,106.7204548
+127,ĐK PKĐK71,Phòng khám đa khoa thuộc Công ty Cổ phần Phòng khám đa khoa Thiên Ý Củ Chi,PKĐK,"703 Quốc lộ 22, KP 5, Thị Trấn Củ Chi",Củ Chi,x,,,,10.9682457,106.4857414
+128,ĐK PKĐK72,Phòng khám đa khoa thuộc Công ty TNHH Dịch vụ Y tế Thiện Phước,PKĐK,"Tỉnh lộ 5, Ấp 12, Xã Tân Thạnh Đông",Củ Chi,x,,,,10.9399254,106.6045569
+129,ĐK PKĐK73,Phòng khám đa khoa thuộc Công ty TNHH Tân Quy,PKĐK,"số 28/7, ấp 1, xã Tân Thạnh Tây",Củ Chi,x,,,,11.0146199,106.5295459
+130,ĐK PKĐK74,Phòng khám đa khoa thuộc Công ty TNHH Y khoa Quốc tế Thiện Phúc ,PKĐK,"741-743 quốc lộ 22, thị trấn Củ Chi",Củ Chi,x,,,,10.9689619,106.4845518
+131,ĐK PKĐK75,Phòng khám đa khoa Nguyễn Thái Sơn thuộc khoa Khám bệnh Trung tâm Y tế quận Gò Vấp,PKĐK,"131 Nguyễn Thái Sơn, phường 7",Gò Vấp,x,,,,10.8250053,106.6870016
+132,ĐK PKĐK76,Phòng khám đa khoa thuộc Công ty Cổ phần Phòng khám đa khoa Hữu Nghị,PKĐK,"số 501-503 đường Nguyễn Oanh, phường 17",Gò Vấp,x,,,,10.8481293,106.6783411
+133,ĐK PKĐK77,Phòng khám đa khoa thuộc Công ty TNHH Chẩn đoán y khoa Tâm Phúc,PKĐK,"331-333 Lê Văn Thọ, phường 9",Gò Vấp,x,,,,10.8459812,106.6568594
+134,ĐK PKĐK78,Phòng khám đa khoa thuộc Công ty TNHH đầu tư y tế Trần Diệp Khanh,PKĐK,"11/25 Nguyễn Oanh, Phường 10",Gò Vấp,x,,,,10.82803,106.679
+135,ĐK PKĐK79,Phòng khám đa khoa thuộc Công ty TNHH Phòng khám đa khoa Bắc Sài Gòn - VN Clinic,PKĐK,"189 Nguyễn Oanh, Phường 10",Gò Vấp,x,,x,,10.8383683,106.6751372
+136,ĐK PKĐK80,Phòng khám đa khoa thuộc Công ty TNHH Phòng khám đa khoa Nhơn Tâm,PKĐK,"số 469 đường Nguyễn Văn Tạo, xã Long Thới",Nhà Bè,x,,x,,10.6419562,106.733118
+137,ĐK PKĐK81,Phòng khám đa khoa thuộc Công ty TNHH Polycare,PKĐK,"07-09 Khu biệt thự Ngân Long, Nguyễn Hữu Thọ, Phường Phước Kiển",Nhà Bè,x,,,,10.7221957,106.7019036
+138,ĐK PKĐK82,Phòng khám đa khoa thuộc Chi nhánh 1 Công ty TNHH Trung tâm Y khoa Hợp Nhân ,PKĐK,"95 A Phan Đăng Lưu, P7.",Phú Nhuận,x,,,Không khám cho trẻ em dưới 16 tuổi,10.8035153,106.6876666
+139,ĐK PKĐK83,Phòng khám đa khoa Hoàn Mỹ Sài Gòn thuộc Chi nhánh Công ty Cổ phần bệnh viện đa khoa Hoàn Mỹ Sài Gòn,PKĐK,"4 A Hoàng Việt, phường 4",Tân Bình,x,x,x,,10.7977292,106.6587109
+140,ĐK PKĐK84,Phòng khám đa khoa thuộc Công ty Cổ phần Bệnh viện Khu Công Nghệ Cao,PKĐK,"Một phần tầng 2, Nhà xưởng số 4, Lô I – 3B -1 đường N6, khu Công Nghệ Cao, Phường Tân Phú",9,x,,,,10.8526086,106.7970669
+141,ĐK PKĐK85,Phòng khám đa khoa thuộc Công ty TNHH Bệnh viện Thánh Mẫu,PKĐK,"118 Bành Văn Trân, Phường 7",Tân Bình,x,,x,,10.789605,106.656719
+142,ĐK PKĐK86,Phòng khám đa khoa thuộc Công ty TNHH CITYCLINIC Việt Nam,PKĐK,"107 Tân Hải, Phường 13",Tân Bình,x,,,,10.8025612,106.6384214
+143,ĐK PKĐK87,Phòng khám đa khoa thuộc Công ty TNHH dịch vụ Y tế Gentical Lạc Long Quân,PKĐK,"951 A Cách Mạng Tháng Tám, phường 7",Tân bình,x,,,,10.7900146,106.657995
+144,ĐK PKĐK88,Phòng khám đa khoa thuộc Công ty TNHH Phòng khám đa khoa Quốc Tế Golden Healthcare,PKĐK,"37 Hoàng Hoa Thám, Phường 13",Tân Bình,x,,,,10.7992739,106.6471473
+145,ĐK PKĐK89,Phòng khám đa khoa thuộc Công ty TNHH Y khoa Hoàng Mỹ Sài Gòn,PKĐK,"50 Phan Huy Ích, Phường 15",Tân Bình,x,,,,10.8363675,106.6360225
+146,ĐK PKĐK90,Phòng khám đa khoa thuộc Công ty TNHH Một thành viên Thương mại - Dịch vụ Y tế Tân Bình,PKĐK,"Lô II-6, Cụm 2, Lê Trọng Tấn, Phường Tây Thạnh",Tân Phú,x,,x,,10.8108421,106.6127811
+147,ĐK PKĐK91,Phòng khám đa khoa thuộc Công ty Cổ phần Trung tâm Y khoa Thành Công,PKĐK,"36 Tây Thạnh, Phường Tây Thạnh",Tân Phú,x,,x,,10.8184775,106.6277755
+148,ĐK PKĐK92,Phòng khám đa khoa thuộc Công ty TNHH Phòng khám đa khoa Hy Vọng,PKĐK,"1031B Thoại Ngọc Hầu, P.Hòa Thạnh",Tân Phú,x,,,,10.785376,106.6408793
+149,ĐK PKĐK93,Phòng khám đa khoa thuộc Công ty TNHH Sản Xuất Thương Mại Dịch vụ Riết Thân,PKĐK,"C 95 Nguyễn Văn Quá, phường Đông Hưng",12,x,,,,10.852834,106.638017
+150,ĐK PKĐK94,Phòng khám đa khoa thuộc Công ty TNHH Đa khoa Phước  Sơn,PKĐK,"226 Võ Văn Ngân, Phường Bình Thọ",Thủ Đức,x,,,,10.850294,106.7666598
+151,ĐK PKĐK95,Phòng khám đa khoa thuộc Công ty Cổ phần Y khoa CHAC 2,PKĐK,"số 42 Đặng Văn Bi, Phường Bình Thọ",Thủ Đức,x,,,,10.8414262,106.7650738
+152,ĐK PKĐK96,Phòng khám đa khoa thuộc Công ty TNHH Phòng khám đa khoa Khu Công Nghiệp Tân Tạo,PKĐK,"4423 Nguyễn Cửu Phú, khu phố 4, phường Tân Tạo A",Bình Tân,x,,,Không khám cho trẻ em dưới 16 tuổi,10.7558141,106.5865999
+153,ĐK PKĐK97,Phòng khám đa khoa thuộc Chi nhánh Công ty TNHH Bệnh viện Quốc tế Doctor Khoa,PKĐK,"116 Gò Dầu, Phường Tân Quý",Tân Phú,x,,x,,10.7959705,106.6248552
+154,ĐK PKĐK98,Phòng khám đa khoa thuộc Công ty TNHH Vigor Health,PKĐK,"102A Trương Định, Phường 9",3,x,x,x,"Không khám cho trẻ em dưới 16 tuổi
+ Thực hiện đối với người có khả năng nói và hiểu được tiếng anh",10.7839627,106.6807874
+155,ĐK PKĐK99,Phòng khám đa khoa thuộc Trung tâm Y tế Quận Phú Nhuận,PKĐK,"23 Nguyễn Văn Đậu, Phường 5",Phú Nhuận,x,,,,10.809426,106.68839
+156,ĐK PKĐK100,Phòng khám đa khoa thuộc Công ty TNHH Y Hoàng Anh Dũng,PKĐK,"154/6C Nguyễn Ảnh Thủ, ấp Trung Chánh 2, xã Trung Chánh",Bình Tân,x,,,Không khám cho trẻ em dưới 16 tuổi,10.857237,106.6083123
+157,ĐK PKĐK101,Phòng khám đa khoa thuộc Công ty TNHH Dịch vụ Y tế và phòng khám đa khoa Tâm An,PKĐK,"47/4-47/6 Huỳnh Tấn Phát, khu phố 6, Thị trấn Nhà Bè",Nhà Bè,x,,,,10.6944286,106.7401231
+158,ĐK PKĐK102,PKĐK thuộc TTYT Quận 4,PKĐK,"51 Vĩnh Khánh, P.9 và 396/27 Nguyễn Tất Thành, P.18",4,x,,,,10.763191,106.7022612
+159,ĐK PKĐK103,Phòng khám đa khoa thuộc Công ty TNHH DYM Medical Center Việt Nam,PKĐK,"Phòng B103 Tầng hầm 1, Tòa nhà mPlaza Saigon số 39 Lê Duẩn, Phường Bến Thành",1,x,x,,Thực hiện đối với người có khả năng nói và hiểu được tiếng anh,10.7815939,106.7002792
+160,ĐK PKĐK104,Phòng khám đa khoa thuộc Công ty Cổ phần Dịch vụ Y tế và Thương Mai Nhân Việt,PKĐK,"189 Lê Văn Việt, Phường Hiệp Phú",9,x,,,,10.8443176,106.7817342
+161,ĐK PKĐK105,Phòng khám đa khoa thuộc Công ty TNHH Phòng khám đa khoa Việt Mỹ Sài Gòn,PKĐK,"983 Tỉnh lộ 10, khu phố 8, Phường Tân Tạo",Bình Tân,x,,,,10.7545872,106.6026904
+162,ĐK PKĐK106,Phòng khám đa khoa thuộc Sim Medical Center - Chi nhánh Công ty Cổ phần Sim Med,PKĐK," RS05 – SH02, RS07 – SH01 Richstar Residence, số 239-241 Hòa Bình, Phường Hiệp Tân",Tân Phú,x,,,,10.7723464,106.6250055
+163,ĐK PKĐK107,Phòng khám đa khoa Quốc tế Timec thuộc Công ty Cổ phần Chăm sóc Y tế Quốc  tế Tecco,PKĐK," Tầng 1, Block F-G Chung cư Tecco Town, 4449 Nguyễn Cửu Phú, Phường Tân Tạo A",Bình Tân,x,,,,10.7526245,106.5858213
+164,ĐK PKĐK108,Phòng khám đa khoa Quốc tế Leancare thuộc công ty Cổ phần Giải pháp Chăm sóc sức khỏe Tâm hợp,PKĐK,"Tầng G, tòa nhà Nguyễn Lâm Tower 133 Dương Bá Trạc, Phường 1",8,x,,,,10.747831,106.6892126
+165,ĐK PKĐK109,Phòng khám đa khoa thuộc Phòng khám Careplus Quận 1 - Chi nhánh Công ty TNHH Cityclinic Việt Nam,PKĐK,"66-68 Nam Kỳ Khởi Nghĩa, Phường Nguyễn Thái Bình, ",1,x,,,,10.770069,106.70169
+166,ĐK PKĐK110,Phòng khám đa khoa Khánh Tâm – Công ty TNHH Y tế Thu An Khánh,PKĐK,"1783A Lê Văn Lương, Ấp 3, xã Nhơn Đức, ",huyện Nhà Bè,x,,,,10.6661141,106.695486
+167,ĐK PKĐK111,Phòng khám đa khoa thuộc Công ty Cổ phần Đại Y,PKĐK,"274-268/4-268/5 Hải Thượng Lãn Ông, phường 14",5,x,,,,10.7513627,106.6566007
