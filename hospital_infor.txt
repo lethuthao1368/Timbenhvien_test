@@ -1,0 +1,19 @@
+Tên bệnh viện: Phòng khám đa khoa thuộc Cty TNHH Monaco Healthcare
+Địa chỉ: 493 Điện Biên Phủ, Phường 3, quận 3
+-------------Thông tin chi tiết-------------
+Thời gian khám thông thường: T2-T6: 07h30-16h30
+T7: 09h00-17h00
+Thời gian khám ngoài giờ: T2-T6: 07h30-16h30
+T7: 09h00-17h00
+Thời gian khám dịch vụ: T2-T6: 07h30-16h30
+T7: 09h00-17h00
+
+
+Các khoa khám bệnh chính: 
+Khoa Nội tổng quát
+Khoa Nội tiêu hóa - gan mật
+Khoa Da liễu
+Khoa Răng hàm mặt
+Ghi chú: 1
+
+

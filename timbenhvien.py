@@ -12,6 +12,17 @@ import bs4
 import json
 from geopy.distance import geodesic
 
+import email, smtplib, ssl # to automate email
+import email as mail
+from email import encoders
+from email.mime.base import MIMEBase
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+
+import datetime as dt # to work with date, time
+from bs4 import BeautifulSoup # to work with web scrapping (HTML)
+from IPython.core.display import HTML # to display HTML in the notebook
+
 st.set_page_config(
      page_title="Sotaybenhvien",
      page_icon=':gift:',
@@ -19,8 +30,9 @@ st.set_page_config(
      initial_sidebar_state="expanded",
 )
 
-st.title("DỰ ÁN SỔ TAY BỆNH VIỆN")
+st.image('Picture\so_tay_bv.png')
 st.sidebar.image('Picture\FONT_TBV.png')
+
     #     # Đọc data từ sheet dùng gsheetsdb
 # conn = connect()
 # def run_query(query):
@@ -32,6 +44,8 @@ st.sidebar.image('Picture\FONT_TBV.png')
 # df = pd.DataFrame(rows.fetchall())
 # st.write(pd.DataFrame(df.values, columns = ['STT', 'Điền', 'KẾT QUẢ', 2,6,7,8,9,0,1]))
     #       # Các lựa chọn
+
+
 
 
 # Dùng gspread load danh sách bệnh viện + địa chỉ + các yếu tố đặc biệt
@@ -165,23 +179,105 @@ def link_ggmap(user_coor,destination):
 # FUNCTION LIET KE THONG TIN CUA 1 BENH VIEN
 def print_hospital_info_txt(input_id,user_coor):
     st.info(df_1.set_index('ID_BV').loc[input_id, 'TÊN'])
-    st.markdown('**+ Địa chỉ:** '+ df_1.set_index('ID_BV').loc[input_id, 'ĐỊA CHỈ'] + ', Quận, ' + str(df_1.set_index('ID_BV').loc[input_id, 'QH']))
-    st.markdown('**+ Lưu ý:** ' + df_1.set_index('ID_BV').loc[input_id,'GHI CHÚ'])
     lat = hospital_add[hospital_add.id_bv == input_id].lat
     lat = list(lat)[0]
     lon = hospital_add[hospital_add.id_bv == input_id].lon
     lon = list(lon)[0]
     bv_coor = (lat,lon)
     link1 = df_1.set_index('ID_BV').loc[input_id, 'Link website ']
-    st.markdown('**+ Website của bệnh viện:** ')
-    st.markdown(link1,unsafe_allow_html = True)
-    st.write('**+ Bản đồ hướng dẫn:** ')
-    st.markdown(link_ggmap(user_coor,bv_coor),unsafe_allow_html = True)
-    st.markdown(':information_source: Từ vị trí của bạn đến bệnh viện khoảng ' + str(get_dis_coor_goong(bv_coor,user_coor)[0]) + 
-    ', tốn khoảng ' + str(get_dis_coor_goong(bv_coor,user_coor)[1]))
+    with st.beta_expander('Thông tin cơ bản về bệnh viện'):
+        st.markdown(':rainbow: **Địa chỉ:** '+ df_1.set_index('ID_BV').loc[input_id, 'ĐỊA CHỈ'] + ', Quận, ' + str(df_1.set_index('ID_BV').loc[input_id, 'QH']))
+        st.markdown(':information_source: Từ vị trí của bạn đến bệnh viện khoảng ' + str(get_dis_coor_goong(bv_coor,user_coor)[0]) + 
+        ', tốn khoảng ' + str(get_dis_coor_goong(bv_coor,user_coor)[1]))
+        if df_1.set_index('ID_BV').loc[input_id,'GHI CHÚ'] != '':
+            st.markdown(':star: **Lưu ý:** ' + df_1.set_index('ID_BV').loc[input_id,'GHI CHÚ'])
+        st.markdown(':earth_africa: **Website của bệnh viện:** '+ link1, unsafe_allow_html = True)
+        st.write(':world_map: ** Bản đồ hướng dẫn:** ' + link_ggmap(user_coor,bv_coor),unsafe_allow_html = True)
     st.write('')
     st.write('')
-    
+
+# function to save information of 1 hospital to a text file to send email:
+def print_hospital_info_email(input_id):
+    file_infor = open('hospital_infor.txt','w', encoding='utf-8', errors='replace')
+    one_add = hospital_add[hospital_add.id_bv == input_id].values[0]
+    print(f'Tên bệnh viện: {one_add[1]}',file=file_infor)
+    print(f'Địa chỉ: {one_add[3]}, quận {one_add[4]}',file=file_infor)
+    print('-------------Thông tin chi tiết-------------',file=file_infor)
+
+    one_infor = hospital_df[hospital_df.id_bv == input_id].values[0]
+
+    if one_infor[3] != 0: print(f'Thời gian khám thông thường: {one_infor[3]}',file=file_infor)
+    if one_infor[4] != 0: print(f'Thời gian khám ngoài giờ: {one_infor[4]}',file=file_infor)
+    if one_infor[5] != 0: print(f'Thời gian khám dịch vụ: {one_infor[5]}',file=file_infor)
+    print('\n',file=file_infor)
+    if one_infor[2] != 0: print(f'Các khoa khám bệnh chính: \n{one_infor[2]}',file=file_infor)
+    if one_infor[6] != 0: print(f'Ghi chú: {one_infor[6]}',file=file_infor)
+    print('\n',file=file_infor)
+    file_infor.close()
+    return open('hospital_infor.txt','r',encoding='utf-8', errors='replace').read()
+
+# email:
+def send_email(receiver_email, subject,input_id,user_coor):
+    lat = hospital_add[hospital_add.id_bv == input_id].lat
+    lat = list(lat)[0]
+    lon = hospital_add[hospital_add.id_bv == input_id].lon
+    lon = list(lon)[0]
+    one_coor = (lat,lon)
+    # (1) Create the email head (sender, receiver, and subject)
+    sender_email = st.secrets['SENDER_EMAIL']
+    password = st.secrets['PWD_EMAIL']
+    email = MIMEMultipart()
+    email["From"] = sender_email
+    email["To"] = receiver_email
+    email["Subject"] = subject
+
+    # (2) Create Body part
+
+    html1 = """
+      <html>
+      <h1><strong>Thông tin bệnh viện </strong></h1>
+      <body>
+      <p>Xin chào bạn! <br>
+        Đây là thông tin bệnh viện bạn đang tìm kiếm:
+      </p>
+      </body>
+      </html>
+      """
+    text1 = print_hospital_info_email(input_id)
+#     text1 = 'infor of the hospital'
+    html2 = """
+    <html>
+
+    Email được gửi vào lúc at <b>{}</b><br>
+    </html>
+    """.format(dt.datetime.now().isoformat())
+    link4 = """
+    <html>
+    Link <a href={}>bản đồ</a> chỉ đường.
+    <br>
+    </html>
+    """.format(link_ggmap(user_coor,one_coor))
+    text5 = '--- Hết. ----'
+
+    # Combine parts
+    part1 = MIMEText(html1, 'html')
+    part2 = MIMEText(text1, 'plain')
+    part3 = MIMEText(link4, 'html')
+    part4 = MIMEText(html2, 'html')
+    part5 = MIMEText(text5, 'plain')
+
+    email.attach(part1)
+    email.attach(part2)
+    email.attach(part3)
+    email.attach(part4)
+    email.attach(part5)
+
+    # (3) Create SMTP session for sending the mail
+    session = smtplib.SMTP('smtp.gmail.com', 587) #use gmail with port
+    session.starttls() #enable security
+    session.login(sender_email, password) #login with mail_id and password
+    text = email.as_string()
+    session.sendmail(sender_email, receiver_email, text)
 
 # function to translate sym vie - eng:
 def trans_sym(list_sym):
@@ -242,28 +338,27 @@ def get_hopital_list(dis_id):
 
 df_1, df_2 = get_data()
 st.sidebar.subheader('Bạn đang tìm bệnh viện theo tiêu chí:')
-option1 = st.sidebar.radio("", ('Vui lòng lựa chọn ở các ô bên dưới',
+option1 = st.sidebar.radio("", ('Cần tư vấn bệnh viện theo triệu chứng',
     'Khám sức khỏe thông thường/ tổng quát', 'Khám sức khỏe cho người lái xe', 
-    'Khám sức khỏe cho người nước ngoài', 'Khám sức khỏe để xuất ngoại','Cần tư vấn bệnh viện theo triệu chứng'))
+    'Khám sức khỏe cho người nước ngoài', 'Khám sức khỏe để xuất ngoại'))
 
-check_box = st.sidebar.checkbox("Tìm các bệnh viện gần nhất")
-if check_box:
-    submitted = False
-    with st.sidebar.form('bv_gan'):
-        diachi_user = st.text_input("Địa chỉ của bạn", '10 Lê Hồng Phong, Quận 10,Hồ Chí Minh')
-        submitted = st.form_submit_button("Tìm")
-        if submitted:
-            user_coor = get_coor_goong(diachi_user)
+
+diachi_user = st.sidebar.text_input("Vui lòng nhập đỉa chỉ ở đây")
+if len(diachi_user) > 0:     
+    user_coor = get_coor_goong(diachi_user)
+else: user_coor = ()
 
 check_box_1 = st.sidebar.checkbox("Bạn muốn nhận email về thông tin bệnh viện bạn đang quan tâm")
 if check_box_1:
     submitted_1 = False
-    st.sidebar.selectbox('Bệnh viện quan tâm',list(df_1.iloc[:,1]))
+    ten_bv = st.sidebar.selectbox('Bệnh viện quan tâm',list(df_1.iloc[:,1]))
+    id_bv_1 = df_1.set_index('TÊN').loc[ten_bv, 'ID_BV']
     with st.sidebar.form('bv_quantam'):
-        diachi_user = st.text_input("Địa chỉ của bạn", '10 Lê Hồng Phong, Quận 10,Hồ Chí Minh')
         email_user = st.text_input('Email của bạn')
         submitted_1 = st.form_submit_button("Nhận thông tin")
-        if submitted_1:
+        if submitted_1 and len(diachi_user) > 0:
+            sub_ject = 'Sổ tay bệnh viện gửi bạn'
+            send_email(email_user,sub_ject, id_bv_1, user_coor)
             st.sidebar.markdown('### :white_check_mark: Đã gửi. Stay safe!')
 
 if option1 == 'Khám sức khỏe thông thường/ tổng quát':
@@ -293,30 +388,27 @@ elif option1 == 'Cần tư vấn bệnh viện theo triệu chứng':
             id_bv = get_hopital_list(output_disease_eng.iloc[i,3])
             df_result = df_1.iloc[:, [0,1,3,4,9,8]].set_index('ID_BV')
             with st.beta_expander('Danh sách bệnh viện bạn có thể tham khảo'):
-                st.write(df_result.loc[id_bv, :].set_index('TÊN'))
-            if check_box:
-                if submitted:
-                    list_coor = get_coor(id_bv)
-                    result_hospital = pd.DataFrame({'hospital_id':id_bv,'coor':list_coor})
-                    result_hospital['geodesic'] = result_hospital.coor.apply(lambda x: geodesic(x, user_coor).km)
-                    result_hospital = result_hospital.sort_values('geodesic',ascending=True)
-                    top_hospital = result_hospital.iloc[0:3,:]
-                    st.markdown('**Danh sách các bệnh viện gần vị trí của bạn**')
-                    for input_id in list(top_hospital.loc[:,'hospital_id']):
-                        print_hospital_info_txt(input_id,user_coor)
-
-if option1 not in ['Vui lòng lựa chọn ở các ô bên dưới','Cần tư vấn bệnh viện theo triệu chứng'] :
-    with st.beta_expander('Danh sách bệnh viện bạn có thể tham khảo'):
-        st.dataframe(df_result.set_index('TÊN'))
-    if check_box:
-        if submitted:
-            id_bv = list(df_result.iloc[:,0])
-            list_coor = get_coor(id_bv)
-            result_hospital = pd.DataFrame({'hospital_id':id_bv,'coor':list_coor})
-            result_hospital['geodesic'] = result_hospital.coor.apply(lambda x: geodesic(x, user_coor).km)
-            result_hospital = result_hospital.sort_values('geodesic',ascending=True)
-            top_hospital = result_hospital.iloc[0:3,:]
-            st.markdown('**Danh sách các bệnh viện gần vị trí của bạn**')
-            for input_id in list(top_hospital.loc[:,'hospital_id']):
-                with st.beta_expander():
+                st.write(df_result.loc[id_bv, ['TÊN','ĐỊA CHỈ','QH']].set_index('TÊN'))
+            if len(user_coor) > 0:
+                list_coor = get_coor(id_bv)
+                result_hospital = pd.DataFrame({'hospital_id':id_bv,'coor':list_coor})
+                result_hospital['geodesic'] = result_hospital.coor.apply(lambda x: geodesic(x, user_coor).km)
+                result_hospital = result_hospital.sort_values('geodesic',ascending=True)
+                top_hospital = result_hospital.iloc[0:3,:]
+                st.markdown('**Danh sách các bệnh viện gần vị trí của bạn**')
+                for input_id in list(top_hospital.loc[:,'hospital_id']):
                     print_hospital_info_txt(input_id,user_coor)
+
+if option1 not in ['Cần tư vấn bệnh viện theo triệu chứng'] :
+    with st.beta_expander('Danh sách bệnh viện bạn có thể tham khảo'):
+        st.dataframe(df_result.loc[:,['TÊN','ĐỊA CHỈ','QH']].set_index('TÊN'))
+    if len(user_coor) > 0:
+        id_bv = list(df_result.iloc[:,0])
+        list_coor = get_coor(id_bv)
+        result_hospital = pd.DataFrame({'hospital_id':id_bv,'coor':list_coor})
+        result_hospital['geodesic'] = result_hospital.coor.apply(lambda x: geodesic(x, user_coor).km)
+        result_hospital = result_hospital.sort_values('geodesic',ascending=True)
+        top_hospital = result_hospital.iloc[0:3,:]
+        st.markdown('**Danh sách các bệnh viện gần vị trí của bạn**')
+        for input_id in list(top_hospital.loc[:,'hospital_id']):
+            print_hospital_info_txt(input_id,user_coor)
