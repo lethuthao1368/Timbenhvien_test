@@ -371,8 +371,7 @@ elif option1 == 'Khám sức khỏe để xuất ngoại':
 elif option1 == 'Cần tư vấn bệnh viện theo triệu chứng':
     sym_input_vie = st.multiselect('Các triệu chứng của bạn', sym_df.viet.values)
     # translate vie into eng
-    check1 = st.button('check')
-    if check1:
+    if st.button('check'):
         st.write(sym_input_vie)
         sym_input_eng = trans_sym(sym_input_vie)
         #convert to vector
