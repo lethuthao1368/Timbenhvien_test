@@ -356,7 +356,7 @@ if check_box_1:
     with st.sidebar.form('bv_quantam'):
         email_user = st.text_input('Email của bạn')
         submitted_1 = st.form_submit_button("Nhận thông tin")
-        if submitted_1 and len(diachi_user) > 0:
+        if submitted_1 and len(diachi_user) > 0 and len(email_user)>0:
             sub_ject = 'Sổ tay bệnh viện gửi bạn'
             send_email(email_user,sub_ject, id_bv_1, user_coor)
             st.sidebar.markdown('### :white_check_mark: Đã gửi. Stay safe!')
