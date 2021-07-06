@@ -23,12 +23,7 @@ import datetime as dt # to work with date, time
 from bs4 import BeautifulSoup # to work with web scrapping (HTML)
 from IPython.core.display import HTML # to display HTML in the notebook
 
-st.set_page_config(
-     page_title="Sotaybenhvien",
-     page_icon=':gift:',
-     layout="centered",
-     initial_sidebar_state="expanded",
-)
+
 
 st.image('Picture\so_tay_bv.png')
 st.sidebar.image('Picture\FONT_TBV.png')
