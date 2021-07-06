@@ -360,6 +360,7 @@ if check_box_1:
             sub_ject = 'Sổ tay bệnh viện gửi bạn'
             send_email(email_user,sub_ject, id_bv_1, user_coor)
             st.sidebar.markdown('### :white_check_mark: Đã gửi. Stay safe!')
+        else: st.sidebar.markdown(':zap: Vui lòng điền đầy đủ thông tin địa chỉ và email')
 if option1 == 'Khám sức khỏe thông thường/ tổng quát':
     df_result = df_1[df_1.iloc[:,5] == 'x'].iloc[:,[0,1,3,4,8,9]]
 elif option1 == 'Khám sức khỏe cho người lái xe':
