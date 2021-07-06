@@ -25,8 +25,7 @@ from IPython.core.display import HTML # to display HTML in the notebook
 
 
 
-st.image('Picture\so_tay_bv.png')
-st.sidebar.image('Picture\FONT_TBV.png')
+
 
     #     # Đọc data từ sheet dùng gsheetsdb
 # conn = connect()
