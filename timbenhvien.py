@@ -39,7 +39,8 @@ from IPython.core.display import HTML # to display HTML in the notebook
 # st.write(pd.DataFrame(df.values, columns = ['STT', 'Điền', 'KẾT QUẢ', 2,6,7,8,9,0,1]))
     #       # Các lựa chọn
 
-
+st.sidebar.image('https://raw.githubusercontent.com/Ha-Huynh-Anh/Timbenhvien_test/main/Picture/FONT_TBV.png')
+st.image('https://raw.githubusercontent.com/Ha-Huynh-Anh/Timbenhvien_test/main/Picture/so_tay_bv.png')
 
 
 # Dùng gspread load danh sách bệnh viện + địa chỉ + các yếu tố đặc biệt
