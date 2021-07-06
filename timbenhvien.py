@@ -294,6 +294,7 @@ def trans_sym(list_sym):
     return list_eng
 ## Test kiem tra
 st.write(trans_sym(['Yếu mệt','Da nổi mẩn']))
+st.write(['Yếu mệt','Da nổi mẩn'])
 # sym_to_vector(sym_input_eng)
 # convert to array format
 def sym_to_vector(list_input_sym):
