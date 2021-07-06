@@ -292,7 +292,8 @@ def trans_sym(list_sym):
             index = list(sym_df.viet).index(i)
             list_eng.append(list(sym_df.eng)[index])
     return list_eng
-
+## Test kiem tra
+st.write(trans_sym(['Yếu mệt','Da nổi mẩn']))
 # sym_to_vector(sym_input_eng)
 # convert to array format
 def sym_to_vector(list_input_sym):
@@ -377,6 +378,7 @@ elif option1 == 'Cần tư vấn bệnh viện theo triệu chứng':
     #convert to vector
     input_array = np.array([sym_to_vector(sym_input_eng)])
     output_disease_eng =  get_disease(train_df,input_array)
+    output_disease_eng = pd.DataFrame(output_disease_eng)
     output_disease_eng = output_disease_eng.reset_index()
     # create table
     output_disease_eng['viet'] = output_disease_eng.prognosis.apply(lambda x: disease_to_vie(x))
