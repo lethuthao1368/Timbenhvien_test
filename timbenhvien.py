@@ -292,9 +292,6 @@ def trans_sym(list_sym):
             index = list(sym_df.viet).index(i)
             list_eng.append(list(sym_df.eng)[index])
     return list_eng
-## Test kiem tra
-st.write(trans_sym(['Yếu mệt','Da nổi mẩn']))
-st.write(['Yếu mệt','Da nổi mẩn'])
 # sym_to_vector(sym_input_eng)
 # convert to array format
 def sym_to_vector(list_input_sym):
