@@ -61,6 +61,7 @@ def get_data():
 @st.cache
 def get_sym_df(url1):
   sym_df = pd.read_csv(url1)
+  sym_df = pd.DataFrame(sym_df)
   sym_df = sym_df.loc[:,('eng','viet')]
   return sym_df
 
@@ -68,6 +69,7 @@ def get_sym_df(url1):
 @st.cache
 def get_dis_df(url1):
   dis_df = pd.read_csv(url1)
+  dis_df = pd.DataFrame(dis_df)
   dis_df = dis_df.loc[:,('id_diseases', 'eng', 'viet', 'bv_tuong_ung')]
   return dis_df
 
@@ -75,18 +77,21 @@ def get_dis_df(url1):
 @st.cache(allow_output_mutation=True)
 def get_train_df(url1):
   train_df = pd.read_csv(url1)
+  train_df = pd.DataFrame(train_df)
   train_df['vector'] = train_df.iloc[:,-133:-1].apply(lambda x: list(x), axis=1) ## sau nay nen tong quat hoa cac con so 133, 1, ...
   return train_df
 
 @st.cache
 def get_hospital_add(url1):
     hospital_add = pd.read_csv(url1)
+    hospital_add = pd.DataFrame(hospital_add)
     hospital_add = hospital_add.loc[:,('id_bv', 'name', 'type', 'address', 'district','ksk_thong_thuong', 'ksk_nuoc_ngoai', 'ksk_lai_xe', 'ghi_chu','lat','lon')]
     return hospital_add
 
 @st.cache
 def get_hospital_df(url1):
     hospital_df = pd.read_csv(url1)
+    hospital_df = pd.DataFrame(hospital_df)
     hospital_df = hospital_df.loc[:,('id_bv', 'name', 'khoa', 'gio_kham_bt', 'gio_kham_ng','gio_kham_dv', 'kham_dv', 'ghi_chu', 'nguoi_dien', 'link')]
     hospital_df[hospital_df.isna()] = 0
     return hospital_df
