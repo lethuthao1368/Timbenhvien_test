@@ -93,7 +93,6 @@ def get_hospital_df(url1):
     hospital_df = pd.read_csv(url1)
     hospital_df = pd.DataFrame(hospital_df)
     hospital_df = hospital_df.loc[:,('id_bv', 'name', 'khoa', 'gio_kham_bt', 'gio_kham_ng','gio_kham_dv', 'kham_dv', 'ghi_chu', 'nguoi_dien', 'link')]
-    hospital_df[hospital_df.isna()] = 0
     return hospital_df
 
 #load data_chan doan benh
@@ -114,6 +113,7 @@ hospital_df = get_hospital_df(url_hospital_df)
 # get coor from hospital database
 def get_coor(list_hospital):
     list_coor = []
+    hospital_add = get_hospital_add(url_hospital_add)
     for i in list_hospital:
         lat = hospital_add[hospital_add.id_bv == i].lat
         lat = list(lat)[0]
@@ -313,11 +313,13 @@ def get_disease(train_df, input_array):
 
     # disease result
     dis_result = train_df[train_df['similar'] > 0]
+    dis_result = pd.DataFrame(dis_result)
     return dis_result.groupby('prognosis').max('similar').iloc[:,-1].sort_values(ascending=False)    
 
-list_disease_eng = dis_df.eng.to_list()
-list_disease_vie = dis_df.viet.to_list()
-list_disease_id = dis_df.id_diseases.to_list()
+dis_df = pd.DataFrame(dis_df)
+list_disease_eng = list(dis_df.eng)
+list_disease_vie = list(dis_df.viet)
+list_disease_id = list(dis_df.id_diseases)
 
 # convert disease to vie
 def disease_to_vie(dis_eng):
@@ -360,7 +362,6 @@ if check_box_1:
             sub_ject = 'Sổ tay bệnh viện gửi bạn'
             send_email(email_user,sub_ject, id_bv_1, user_coor)
             st.sidebar.markdown('### :white_check_mark: Đã gửi. Stay safe!')
-
 if option1 == 'Khám sức khỏe thông thường/ tổng quát':
     df_result = df_1[df_1.iloc[:,5] == 'x'].iloc[:,[0,1,3,4,8,9]]
 elif option1 == 'Khám sức khỏe cho người lái xe':
