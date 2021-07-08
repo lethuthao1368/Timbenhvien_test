@@ -372,35 +372,34 @@ elif option1 == 'Khám sức khỏe để xuất ngoại':
 elif option1 == 'Cần tư vấn bệnh viện theo triệu chứng':
     sym_input_vie = st.multiselect('Các triệu chứng của bạn', sym_df.viet.values)
     # translate vie into eng
-    if st.button('check'):
-        st.write(sym_input_vie)
-        sym_input_eng = trans_sym(sym_input_vie)
-        #convert to vector
-        input_array = np.array([sym_to_vector(sym_input_eng)])
-        output_disease_eng =  get_disease(train_df,input_array)
-        output_disease_eng = pd.DataFrame(output_disease_eng)
-        output_disease_eng = output_disease_eng.reset_index()
-        # create table
-        output_disease_eng['viet'] = output_disease_eng.prognosis.apply(lambda x: disease_to_vie(x))
-        output_disease_eng['id'] = output_disease_eng.prognosis.apply(lambda x: disease_to_id(x))
-        if len(sym_input_vie) > 0:
-            st.markdown(':hospital: Bạn có thể cần được khám về ')
-        for i in output_disease_eng.index:
-            see_hospital = st.checkbox(output_disease_eng.iloc[i,2])
-            if see_hospital:
-                id_bv = get_hopital_list(output_disease_eng.iloc[i,3])
-                df_result = df_1.iloc[:, [0,1,3,4,9,8]].set_index('ID_BV')
-                with st.beta_expander('Danh sách bệnh viện bạn có thể tham khảo'):
-                    st.write(df_result.loc[id_bv, ['TÊN','ĐỊA CHỈ','QH']].set_index('TÊN'))
-                if len(user_coor) > 0:
-                    list_coor = get_coor(id_bv)
-                    result_hospital = pd.DataFrame({'hospital_id':id_bv,'coor':list_coor})
-                    result_hospital['geodesic'] = result_hospital.coor.apply(lambda x: geodesic(x, user_coor).km)
-                    result_hospital = result_hospital.sort_values('geodesic',ascending=True)
-                    top_hospital = result_hospital.iloc[0:3,:]
-                    st.markdown('**Danh sách các bệnh viện gần vị trí của bạn**')
-                    for input_id in list(top_hospital.loc[:,'hospital_id']):
-                        print_hospital_info_txt(input_id,user_coor)
+    # test lại bằng streamlit 0.80.0
+    sym_input_eng = trans_sym(sym_input_vie)
+    #convert to vector
+    input_array = np.array([sym_to_vector(sym_input_eng)])
+    output_disease_eng =  get_disease(train_df,input_array)
+    output_disease_eng = pd.DataFrame(output_disease_eng)
+    output_disease_eng = output_disease_eng.reset_index()
+    # create table
+    output_disease_eng['viet'] = output_disease_eng.prognosis.apply(lambda x: disease_to_vie(x))
+    output_disease_eng['id'] = output_disease_eng.prognosis.apply(lambda x: disease_to_id(x))
+    if len(sym_input_vie) > 0:
+        st.markdown(':hospital: Bạn có thể cần được khám về ')
+    for i in output_disease_eng.index:
+        see_hospital = st.checkbox(output_disease_eng.iloc[i,2])
+        if see_hospital:
+            id_bv = get_hopital_list(output_disease_eng.iloc[i,3])
+            df_result = df_1.iloc[:, [0,1,3,4,9,8]].set_index('ID_BV')
+            with st.beta_expander('Danh sách bệnh viện bạn có thể tham khảo'):
+                st.write(df_result.loc[id_bv, ['TÊN','ĐỊA CHỈ','QH']].set_index('TÊN'))
+            if len(user_coor) > 0:
+                list_coor = get_coor(id_bv)
+                result_hospital = pd.DataFrame({'hospital_id':id_bv,'coor':list_coor})
+                result_hospital['geodesic'] = result_hospital.coor.apply(lambda x: geodesic(x, user_coor).km)
+                result_hospital = result_hospital.sort_values('geodesic',ascending=True)
+                top_hospital = result_hospital.iloc[0:3,:]
+                st.markdown('**Danh sách các bệnh viện gần vị trí của bạn**')
+                for input_id in list(top_hospital.loc[:,'hospital_id']):
+                    print_hospital_info_txt(input_id,user_coor)
 
 if option1 not in ['Cần tư vấn bệnh viện theo triệu chứng'] :
     with st.beta_expander('Danh sách bệnh viện bạn có thể tham khảo'):
