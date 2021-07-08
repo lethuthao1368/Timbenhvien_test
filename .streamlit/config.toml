@@ -1,2 +1,5 @@
 [theme]
+[theme]
+base="light"
+secondaryBackgroundColor="#9db9b9"
 font="serif"
