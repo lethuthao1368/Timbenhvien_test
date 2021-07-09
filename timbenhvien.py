@@ -336,17 +336,18 @@ def get_hopital_list(dis_id):
     return bv_id
 
 
+diachi_user = st.sidebar.text_input("Vui lòng nhập đỉa chỉ ở đây")
+if len(diachi_user) > 0:     
+    user_coor = get_coor_goong(diachi_user)
+else: user_coor = ()
+
+
 df_1, df_2 = get_data()
 st.sidebar.subheader('Bạn đang tìm bệnh viện theo tiêu chí:')
 option1 = st.sidebar.radio("", ('Cần tư vấn bệnh viện theo triệu chứng',
     'Khám sức khỏe thông thường/ tổng quát', 'Khám sức khỏe cho người lái xe', 
     'Khám sức khỏe cho người nước ngoài', 'Khám sức khỏe để xuất ngoại'))
 
-
-diachi_user = st.sidebar.text_input("Vui lòng nhập đỉa chỉ ở đây")
-if len(diachi_user) > 0:     
-    user_coor = get_coor_goong(diachi_user)
-else: user_coor = ()
 
 check_box_1 = st.sidebar.checkbox("Bạn muốn nhận email về thông tin bệnh viện bạn đang quan tâm")
 if check_box_1:
